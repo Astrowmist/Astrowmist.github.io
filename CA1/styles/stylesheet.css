@@ -1,0 +1,368 @@
+body#landing {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/Earthcool.jpg);
+    /* Link to the image: https://wallpaperset.com/w/full/4/9/6/532551.jpg */
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+/* Creating a title with textshadow*/
+#MainTitle {
+    color:rgb(248, 27, 27);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-shadow: 3px 3px rgb(52, 194, 219);
+
+}
+/*To create a top NavBar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(245, 245, 245, 0.1);
+    height: 74px;
+}
+
+li {
+    float: left;
+    opacity: 100%;
+    font-size: x-large;
+
+}
+
+
+#logo {
+    color: red;
+    font-size: 65px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 2px;
+    margin-left: 2px;
+}
+
+.Navbar {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: .25s ease-in;
+    font-size: 22px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+/* To create a glowing effect by stacking multiple shadows when hovered */
+.Navbar:hover {
+    background: #ff4545;
+    box-shadow: 0 0 5px #ff4545, 0 0 25px #ff4545, 0 0 50px #ff4545, 0 0 200px #ff4545;
+    border-radius: 15px;
+    transform: scale(1.07, 1.07);
+}
+
+#Background {
+    background: url(../images/backgroundsea.jpg);
+    /* Image ref:https://c4.wallpaperflare.com/wallpaper/557/708/919/ios8-sea-nature-minimal-wallpaper-preview.jpg */
+    filter: opacity(0.98);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Creating a grid with */
+#Aboutme {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    margin-top: 290px;
+}
+
+#Aboutme h1 {
+    color: #F6B109;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    grid-row: 1;
+    font-size: 45px;
+    text-shadow: 2px 2px #ff0000;
+}
+
+figure {
+    grid-row: 2;
+    /* To center the figure element*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+figcaption {
+    grid-row: 3;
+    padding-left: 90px;
+    margin-top: 8px;
+    color: aliceblue;
+}
+
+#firstpara {
+    color: whitesmoke;
+    grid-row: 4;
+    font-size: x-large;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 9px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-weight: bold;
+}
+
+#ME {
+    width: 350px;
+    box-shadow: 7px 7px 5px;
+
+}
+
+
+
+/* CSS code for 2nd webpage(act.html). 
+Note:There other css code above that also applies to this webpage. Eg.The code in ul{} */
+
+body#Act {
+    background: url(../images/actback1.webp);
+    /*https://martinvorel.com/wp-content/uploads/2018/10/Winter-Forest-1536x956.jpg*/
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    background-size: auto 900px;
+}
+
+body#Act .Navbar {
+    color: black;
+}
+
+/* Removed the glowing effect since it did not go well with the white background*/
+body#Act .Navbar:hover {
+    background: #ff4545;
+    box-shadow: 0 0 5px #ff4545;
+    border-radius: 15px;
+    transform: scale(1.07, 1.07);
+}
+
+#Goals {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+}
+
+#MainTitle2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+#Goals h1 {
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 50px;
+}
+
+#Goals {
+    background: white;
+    margin-top: 380px;
+}
+
+#firstgoal {
+    grid-row: 2;
+    padding: 30px;
+    font-size: 22px;
+    border-style: solid;
+    border-radius: 14px;
+    margin: 10px;
+    border-color: rgb(76, 113, 20);
+    padding-right: 400px;
+}
+
+#secondgoal {
+    grid-row: 3;
+    padding: 30px;
+    font-size: 22px;
+    border-style: solid;
+    border-radius: 14px;
+    margin: 10px;
+    border-color: rgb(120, 178, 34);
+    padding-right: 400px;
+}
+
+#secondgoal li {
+    margin-bottom: 14px;
+}
+
+#thirdgoal {
+    grid-row: 4;
+    padding: 30px;
+    font-size: 22px;
+    border-style: solid;
+    border-radius: 14px;
+    margin: 10px;
+    border-color: greenyellow;
+    padding-right: 400px;
+    margin-bottom: 20px;
+}
+
+#Leafplug {
+    position: absolute;
+    width: 420px;
+    right: 0px;
+    top: 970px;
+}
+
+#ThreeRs {
+    position: absolute;
+    width: 398px;
+    right: 15px;
+    top: 1450px;
+}
+
+#TreePlanting {
+    position: absolute;
+    width: 398px;
+    right: 18px;
+    top: 1950px;
+}
+
+body#Act footer {
+    grid-column: 1/-1;
+    grid-row: 5;
+    padding: 30px;
+    font-size: 25px;
+    background: rgb(234, 234, 234);
+}
+
+
+/* CSS code for 3rd webpage(spcontri.html). 
+Note:There other css code above that also applies to this webpage. Eg. The code in ul{} */
+
+body#spcontri {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body#spcontri #SPbackground {
+    width: 1400px;
+    height: 1200px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    filter: blur(2px) opacity(0.25);
+}
+
+body#spcontri .Navbar {
+    color: black;
+}
+
+/* Same as in the 2nd Webpage.Removed the glowing effect as it did not go well with the background*/
+body#spcontri .Navbar:hover {
+    background: #ff4545;
+    box-shadow: 0 0 5px #ff4545;
+    border-radius: 15px;
+    transform: scale(1.07, 1.07);
+
+}
+
+body#spcontri div {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body#spcontri div #MainTitle3 {
+    font-size: 60px;
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+body#spcontri h2 {
+    position: absolute;
+    top: 195px;
+    left: 20px;
+}
+
+#contri1 {
+    grid-column: 1/-1;
+    grid-row: 3;
+    font-size: 23px;
+    border-style: solid;
+    border-radius: 14px;
+    margin: 10px;
+    padding: 30px;
+    padding-right: 400px;
+}
+
+#contri2 {
+    grid-column: 1/-1;
+    grid-row: 4;
+    font-size: 23px;
+    border-style: solid;
+    border-radius: 14px;
+    margin: 10px;
+    padding: 30px;
+    padding-right: 400px;
+}
+
+#contri3 {
+    grid-column: 1/-1;
+    grid-row: 5;
+    font-size: 23px;
+    border-style: solid;
+    border-radius: 14px;
+    margin: 10px;
+    padding: 30px;
+    padding-right: 400px;
+}
+
+#CCC {
+    position: absolute;
+    width: 480px;
+    right: 0px;
+    top: 380px;
+}
+
+#GreenMark {
+    position: absolute;
+    width: 300px;
+    right: 50px;
+    top: 567px;
+}
+
+#FigTree {
+    position: absolute;
+    width: 240px;
+    right: 50px;
+    top: 930px;
+}
+
+body#spcontri footer {
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: rgb(207, 207, 207);
+    padding: 15px;
+}
+
+body#spcontri footer a {
+    transition: 0.25s ease-in;
+    padding-left: 3px;
+    text-decoration: none;
+    /* Made the display:inline-block in order to scale the link upon hover as CSS 
+transormation does not work on inline elements*/
+    display: inline-block;
+}
+
+body#spcontri footer a:hover {
+    transform: scale(1.07, 1.07);
+    color: #ff0000;
+}

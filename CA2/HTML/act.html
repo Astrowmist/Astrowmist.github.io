@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../CSS/stylesheet.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Act Now</title>
+</head>
+
+<body id="act">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../IMAGES/spLogo.png" alt="Logo" width="60"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item">
+            <a class="nav-link " href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="act.html">Act Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="spcontri.html">SP's Contributions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="form.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid text-center">
+    <div class="row" id="row-1-2">
+      <div class="col" id="treeImage">
+        <img src="../IMAGES/actback.png" class="img-fluid" alt="Me">
+      </div>
+    </div>
+    <div class="row fade-in" id="looming">
+      <div class="col">
+
+        <h1 id="deathearth"></h1>
+
+      </div>
+    </div>
+    <div class="row fade-in">
+      <div class="col-md-6">
+        <p id="earthDeath">Earth is facing significant threats due to climate change, deforestation, and plastic
+          pollution.
+          Rising temperatures, melting polar ice caps, and wildfires are causing widespread destruction. Depletion
+          of natural resources, biodiversity loss, and potential pandemics are threatening our planet. Collective action
+          is needed to reverse these trends and ensure a sustainable future. Global cooperation, innovation, and a
+          shared
+          commitment to Earth's wellbeing are essential for a better future.</p>
+      </div>
+      <div class="col-md-6" id="carousel">
+        <div id="Carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="../IMAGES/deforest.webp" class="d-block w-100" alt="Deforestation"
+                id="deforest"><!--Image Credits: https://www.theguardian.com/environment/2020/oct/01/brazil-amazon-rainforest-worst-fires-in-decade -->
+              <div class="carousel-caption d-block">
+                <h5>Deforestation</h5>
+                <p>Brazil's Amazon rainforest suffers worst fires in a decades</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../IMAGES/icecaps.jpg" class="d-block w-100" alt="icecaps"
+                id="ice"><!--Image Credits: https://www.independent.co.uk/climate-change/news/arctic-ice-melting-to-a-record-low-scientists-warn-8070049.html -->
+              <div class="carousel-caption d-block">
+                <h5>Melting Ice Caps</h5>
+                <p id="icep">Arctic ice melting to a record low</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../IMAGES/plasticPollution.jpg" class="d-block w-100" alt="plasticPollution"
+                id="plastic"><!--Image Credits: http://passportocean.com/2017/11/20/15-shocking-facts-ocean-pollution/ -->
+              <div class="carousel-caption d-block">
+                <h5>Plastic Pollution</h5>
+                <p>Beaches choked with plastic pollution</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row fade-in" id="Tablehead">
+      <div class="col-md-9">
+        <h2 id="tablehead">Table showing human activities' greenhouse gas emissions.</h2>
+      </div>
+    </div>
+    <div class="row fade-in" id="table-row">
+      <div class="col-md-9" id="table">
+        <table class="table table-hover table-bordered table-dark">
+          <!-- Table Credits: https://www.universityofcalifornia.edu/sites/default/files/uc_climatechange_illustrations_greenhouse-gas-emissions.png -->
+          <thead>
+            <tr>
+              <th scope="col" colspan="3">Where do Greenhouse Gas Emissions come from</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr">
+              <th scope="col">No.</th>
+              <th scope="col">Sources</th>
+              <th scope="col">Percentage of Greenhouse Gas Emission</th>
+            </tr>
+            <tr class="tr">
+              <th scope="row">1</th>
+              <td>Electricity</td>
+              <td>25%</td>
+            </tr>
+            <tr class="tr">
+              <th scope="row">2</th>
+              <td>Agriculture</td>
+              <td>20.4%</td>
+            </tr>
+            <tr class="tr">
+              <th scope="row">3</th>
+              <td>Industry</td>
+              <td>17.9%</td>
+            </tr>
+            <tr class="tr">
+              <th scope="row">4</th>
+              <td>Transportaion</td>
+              <td>14%</td>
+            </tr>
+            <tr class="tr">
+              <th scope="row">5</th>
+              <td>Other Energy</td>
+              <td>9.6%</td>
+            </tr>
+            <tr class="tr">
+              <th scope="row">6</th>
+              <td>Food Waste</td>
+              <td>6.7%</td>
+            </tr>
+            <tr class="tr">
+              <th scope="row">7</th>
+              <td>Buildings</td>
+              <td>6.4%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row fade-in" id="">
+      <div class="col" id="modal-description">
+        <h3>To find out about practical ways to make a positive impact on the environment
+          and foster a sustainable future click this button</h3>
+      </div>
+    </div>
+    <div class="row fade-in" id="">
+      <div class="col" id="modalbtn"><!-- Button trigger for the modal -->
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Click Me
+        </button>
+      </div>
+    </div>
+    <a href="#" id="top">Back to Top ↑</a>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Simple Steps Towards a Sustainable Future</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row fade-in">
+            <div class="col-md-9">
+              <ol>
+                <li>One of the most efficient ways to contribute to a sustainable
+                  future is by reducing our personal carbon footprint.</li>
+                <li>Embrace Energy Efficiency: Make a commitment to reduce energy consumption in your daily life.
+                  Switch to energy-efficient appliances, turn off lights when not in use, unplug electronics, and
+                  adjust your thermostat to conserve energy.</li>
+                <li>Choose environmentally friendly modes of transportation
+                  whenever possible. Walk, bike, or use public transportation instead of relying on personal vehicles.
+                  When buying vehicles buy hybrid or fully electric vehicles.</li>
+              </ol>
+            </div>
+            <div class="col-md-3"> <img src="../IMAGES/3Rs.png" class="img-fluid" alt="recycle" id="recycle"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="row fade-in">
+            <div class="col-md-9">
+              <p>By implementing these simple steps, you can play a vital role in preserving our planet for generations
+                to
+                come.</p>
+            </div>
+            <div class="col-md-3">
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+    defer></script>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="../JAVASCRIPT/index.js" defer></script>
+</body>
+
+</html>

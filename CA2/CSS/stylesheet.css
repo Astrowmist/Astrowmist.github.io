@@ -1,0 +1,503 @@
+/* Setting background for the navbar */
+nav.navbar.navbar-expand-lg {
+    padding: 1vw;
+    background-image: linear-gradient(to right, rgb(58, 96, 96), black);
+}
+
+/* Define the @keyframes for the scaling animation */
+@keyframes scaleLoop {
+    0% {
+        transform: scale(1);
+        /* Start with the original scale (1) */
+    }
+
+    50% {
+        transform: scale(1.3);
+        /* Scale to 1.5 at 50% of the animation duration */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Return to the original scale at the end of the animation (100%) */
+    }
+}
+
+/* Apply the animation to the element */
+a.navbar-brand {
+    animation: scaleLoop 0.8s infinite;
+    /* 0.8s duration, infinite loop */
+}
+
+a.nav-link {
+    color: whitesmoke;
+    transition: .25s ease-in;
+}
+
+li.nav-item {
+    padding-left: 2vw;
+}
+
+/* creating creating for the navbar hover and active effect */
+nav.navbar li.nav-item.active a.nav-link {
+    background: linear-gradient(to right, #ffff00, #ff3399);
+    color: rgb(53, 47, 78);
+    border-radius: 15px;
+    transform: scale(1.05, 1.05);
+}
+
+a.navbar-brand {
+    padding: 0;
+}
+
+a.nav-link:hover {
+    background: linear-gradient(to right, #ffff00, #ff3399);
+    color: rgb(53, 47, 78);
+    border-radius: 15px;
+    transform: scale(1.15, 1.15);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+div#earthImage.col {
+    padding: 0;
+}
+
+#indexhtml {
+    background-color: #e6dcdc;
+}
+
+div#myPicture.card {
+    margin: auto;
+    padding: auto;
+    /* To create a box shadow for my card */
+    box-shadow: 7px 7px 5px;
+}
+
+div.col {
+    padding: 0;
+    padding-top: 2%;
+}
+
+div.card {
+    width: 40%;
+}
+
+ul.nav.nav-pills {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+ul.nav.nav-pills button.nav-link {
+    font-size: 1.4rem;
+}
+
+li.nav-item {
+    padding: 0;
+}
+
+div.col-md-3 p {
+    text-align: left;
+}
+
+div.col h1 {
+    font-size: 5rem;
+}
+
+#row-2 {
+    margin-top: 3%;
+}
+
+p.card-text {
+    color: #543035;
+}
+
+div#personality.col h1 {
+    font-size: 4rem;
+}
+
+div#interest.col h1 {
+    font-size: 4rem;
+}
+
+div#values.col {
+    margin-bottom: 2%;
+    color: #543035;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div#interest.col {
+    margin-bottom: 2%;
+    color: #543035;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div#anime.col-md-6 p {
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+
+div#personality.col {
+    margin-bottom: 2%;
+    color: #543035;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#home div h2 {
+    color: #543035;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-bottom-style: solid;
+    border-color: #543035;
+    padding-bottom: 2%;
+}
+
+div#perserverance.col-md-3 p {
+    padding-top: 3%;
+    padding-right: 3%;
+}
+
+div#compassion.col-md-3 p {
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+div#perserverance.col-md-3 {
+    padding-right: 2%;
+}
+
+div#compassion.col-md-3 {
+    padding-left: 2%;
+}
+
+div#cheerful.col-md-3 {
+    padding-right: 2%;
+}
+
+div#enthu.col-md-3 {
+    padding-left: 2%;
+}
+
+div.col-md-4 p {
+    padding-top: 3%;
+    text-align: left;
+}
+
+div.col-md-6 p {
+    padding-top: 3%;
+    text-align: left;
+}
+
+div.col-md-3 p {
+    padding-top: 3%;
+    border-radius: 15px;
+}
+
+div.row p {
+    font-size: large;
+}
+
+div#Values.row {
+    justify-content: center;
+}
+
+div#Personality.row {
+    justify-content: center;
+}
+
+div.tab-content p {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+/* A anchor elemnt that brings the user back to the top of the webpage */
+a#top {
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #000000;
+    background: linear-gradient(to right, #ffff00, #ff3399);
+    border-radius: 100px;
+    left: 95%;
+    position: sticky;
+    margin-top: 100vh;
+    bottom: 10px;
+}
+
+/*            CSS for 2nd Webpage (act.html)                 */
+#treeImage {
+    padding: 0;
+}
+
+#treeImage img {
+    height: 630px;
+}
+
+/* CSS for fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2s, transform 2s;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#looming {
+    margin-bottom: 3%;
+}
+
+#earthDeath {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #3d4792;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-right-style: solid;
+
+}
+
+h1#deathearth {
+    font-size: 4rem;
+    color: #543035;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.carousel-caption h5 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+div.carousel-caption p {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+}
+
+div.carousel-item img {
+    height: 400px;
+}
+
+body#act {
+    background-color: #e6dcdc;
+}
+
+/* using css filter to make the images look good with the white text */
+#ice {
+    filter: brightness(0.5);
+}
+
+#deforest {
+    filter: brightness(0.6);
+}
+
+#plastic {
+    filter: brightness(0.5);
+}
+
+div#table {
+    padding: auto;
+    margin: auto;
+    margin-top: 3%;
+}
+
+#Tablehead {
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#tablehead {
+    color: #543035;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom-style: solid;
+    font-weight: 700;
+}
+
+#table {
+    font-size: large;
+    border-style: none;
+}
+
+#modal {
+    margin-bottom: 10%;
+}
+
+#recycle {
+    width: 230px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+#modalbtn {
+    margin-bottom: 3%;
+}
+
+.btn.btn-warning:hover {
+    transform: translateY(-0.25em) scale(1.1);
+}
+
+#modal-description h3 {
+    color: #543035;
+    font-family: cursive
+}
+
+div.modal-header {
+    background-color: rgb(88, 229, 88);
+}
+
+div.modal-footer {
+    background-color: lightgreen;
+}
+
+div.modal-body {
+    background-color: rgb(199, 239, 199);
+}
+
+/*            CSS for 3rd Webpage (spcontri.html)                 */
+div.col {
+    padding: 0;
+}
+
+div#spcontri.container-fluid.text-center {
+    padding: 2.5%;
+    color: #353535;
+}
+
+body#contri {
+    position: relative;
+}
+
+body#contri::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(../IMAGES/SP.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px) opacity(0.3);
+}
+
+#maintitle {
+    margin: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#maintitle h1 {
+    font-size: 62px;
+    font-weight: 600;
+}
+
+#maintitle2 {
+    margin: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+#maintitle2 h2 {
+    font-weight: 600;
+}
+
+#spcontri p#greenmark {
+    text-align: right;
+}
+
+#spcontri p {
+    font-size: 1.7rem;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+#CCC {
+    width: auto;
+    height: 260px;
+    margin: 0 auto;
+    padding-top: 8%;
+}
+
+#greenmark img {
+    width: auto;
+    height: 350px;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+#greenmark h1 {
+    padding-top: 4%;
+}
+
+#FigTree {
+    width: auto;
+    height: 300px;
+    margin: 0 auto;
+}
+
+footer {
+    text-transform: capitalize;
+    font-size: 20px;
+    background-color: rgb(207, 207, 207);
+    padding: 15px;
+}
+
+footer a {
+    transition: 0.25s ease-in;
+    padding-left: 3px;
+    text-decoration: none;
+    /* Made the display:inline-block in order to scale the link upon hover as CSS 
+transormation does not work on inline elements*/
+    display: inline-block;
+}
+
+footer a:hover {
+    transform: scale(1.2, 1.2);
+    color: #ff0000;
+}
+
+/*            CSS for 4th Webpage (form.html)                 */
+
+nav#forms.navbar.navbar-expand-lg {
+    margin-bottom: 5%;
+}
+
+form {
+    background-color: #e8e8e8;
+    padding: 4%;
+    border-radius: 30px;
+    width: 80%;
+    padding: auto;
+    margin: auto;
+}
+
+#formhtml {
+    background: url(../IMAGES/stars.jpg);
+    /*Image Credits: https://th.bing.com/th/id/R.c6280e8f909cdaa96f599f4b611e876c?rik=qMe3%2fCCkXAmrHg&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-14%2fStars-HD-Wallpaper-37023.jpeg&ehk=0963WPvcg8xpUplHlxcK0zEFoRqUaQUdRIcZSdWJdNI%3d&risl=1&pid=ImgRaw&r=0 */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#emptySpace {
+    margin: 8%;
+}
+
+label {
+    font-size: large;
+    font-weight: 500;
+}
+
+div.foorm,
+div.form-check.foorm,
+div.mb-3.foorm {
+    margin: 5%;
+}
+
+/* THE END! YAY */
