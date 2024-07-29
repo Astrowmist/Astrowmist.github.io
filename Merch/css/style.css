@@ -1,0 +1,167 @@
+#logoImage {
+    width: auto;
+    height: 1.9rem;
+}
+
+main {
+    min-height: calc(100vh - 47.33px - 46.41px);
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url("../Images/Cyberpunk-BG.jpg");
+    /* Image Ref: https://images2.alphacoders.com/105/1054348.jpg*/
+    background-attachment: fixed;
+    background-size: cover;
+    color: #edeaea;
+    margin: 0;
+    padding: 0;
+    /* backdrop-filter: blur(1.5px); */
+    overflow-x: hidden;
+    backdrop-filter: blur(5.5px);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white;
+    font-size: 1rem;
+}
+
+/* Make the navbar translucent */
+.navbar {
+    backdrop-filter: blur(20.5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav .nav-link.custom-other-link {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.7rem;
+    /* Change to your preferred text color */
+}
+
+.navbar-nav .nav-link.custom-other-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f07cee;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+}
+
+.navbar-nav .nav-link.custom-other-link:hover::before {
+    transform: translateX(0);
+}
+
+#Product1 .ecwid-SingleProduct-picture {
+    background: url('https://d2j6dbq0eux0bg.cloudfront.net/images/106227843/4457697722.png') no-repeat center center;
+}
+
+#Product2 .ecwid-SingleProduct-picture {
+    background: url('https://d2j6dbq0eux0bg.cloudfront.net/images/106227843/4457774645.png') no-repeat center center;
+}
+
+#Product1 .ecwid-SingleProduct-picture,
+#Product2 .ecwid-SingleProduct-picture {
+    background-size: contain;
+    /* Adjust image size */
+    padding: 1rem;
+    /* Add padding to zoom out */
+    border-radius: 0.5rem;
+    /* Apply border-radius */
+    transition: background 0.2s ease-in-out;
+}
+
+#Product1 .ecwid-SingleProduct-picture:hover {
+    background: url('../Images/BK_gryphons_varsity_jacket.png') no-repeat center center;
+    background-size: contain;
+    /* Ensure hover image also fits well */
+}
+
+#Product2 .ecwid-SingleProduct-picture:hover {
+    background: url('../Images/BK_dcdf_shirt_black.png') no-repeat center center;
+    background-size: contain;
+    /* Ensure hover image also fits well */
+}
+
+.ecwid-SingleProduct-picture img {
+    visibility: hidden;
+    border-radius: 0.5rem;
+}
+
+div.Merch {
+    border-radius: 0.5rem;
+}
+
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-eq-height>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-eq-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-eq-height>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.ecsp.ecsp-SingleProduct-v2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.ecsp-SingleProduct-picture {
+    flex-grow: 1;
+    background-size: cover;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.ecsp-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.ecsp-productBrowser-price {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+div.nocolor {
+    margin-top: 3rem;
+}
+
+
+html#ecwid_html body#ecwid_body .ecsp.ecsp-SingleProduct-v2 div[customprop='qty'].nocolor {
+    margin-top: 8rem;
+}
+
+html#ecwid_html body#ecwid_body .ecsp.ecsp-SingleProduct-v2.ecsp-SingleProduct-v2-bordered.loaded.Merch{
+    background-color: #343434c1;
+    box-shadow: 2 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2 .ecsp-title{
+    color: #edeaea;
+}
+
+html#ecwid_html body#ecwid_body.store label.ecwid-fieldLabel{
+    color: #edeaea;
+}
+
+html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2{
+color: #edeaea;
+}
