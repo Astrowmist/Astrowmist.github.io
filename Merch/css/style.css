@@ -343,3 +343,7 @@ footer #button1 {
 .foot:hover{
     transform: scale(1.1); /* Increase the size by 10% */
 }
+
+html#ecwid_html body#ecwid_body.store .ecsp, html#ecwid_html body#ecwid_body.store .ecwid{
+    color: black;
+}
