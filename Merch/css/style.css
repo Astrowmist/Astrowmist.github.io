@@ -18,7 +18,7 @@ body {
     padding: 0;
     /* backdrop-filter: blur(1.5px); */
     overflow-x: hidden;
-    backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(4px);
 }
 
 .navbar .nav-link,
@@ -56,11 +56,11 @@ body {
 }
 
 #Product1 .ecwid-SingleProduct-picture {
-    background: url('https://d2j6dbq0eux0bg.cloudfront.net/images/106227843/4457697722.png') no-repeat center center;
+    background: url('../Images/FR_gryphons_varsity_jacket.png') no-repeat center center;
 }
 
 #Product2 .ecwid-SingleProduct-picture {
-    background: url('https://d2j6dbq0eux0bg.cloudfront.net/images/106227843/4457774645.png') no-repeat center center;
+    background: url('../Images/FR-dcdf_shirt_black.png') no-repeat center center;
 }
 
 #Product1 .ecwid-SingleProduct-picture,
