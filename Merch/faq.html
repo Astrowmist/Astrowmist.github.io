@@ -12,9 +12,15 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet2" />
+
 </head>
 
 <body class="store">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <div id="root"></div>
+
     <nav class="navbar navbar-expand-lg py-1" id="navbar">
         <div class="container-fluid" id="navcontainer">
             <a class="navbar-brand" href="index.html" id="logoLink"><img src="./Images/GryphonsLightLogo.png"
@@ -39,91 +45,189 @@
             </div>
         </div>
     </nav>
+
     <main class="py-4">
-        <form id="myform" class="needs-validation">
-            <div class="foorm">
-                <h2>Give Us Your Feedback</h2>
+
+        <div class="justify-center items-center py-24 xl:px-80 lg:px-48 px-20 pt-28 pb-6 bg-gradient-to-b from-violet-900 to-gryphons-blue"
+            id="faq">
+            <div>
+                <div style="opacity: 1; transform: none;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        style="height:7vw; width:98vw;" fill="currentColor" class="w-[100px] m-auto">
+                        <path fill-rule="evenodd"
+                            d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                            clip-rule="evenodd"></path>
+                    </svg></div>
             </div>
-            <div class="mb-3 foorm">
-                <label for="name" class="form-label">Name</label>
-                <input type="name" class="form-control purple" id="name" placeholder="Name" id="form" required>
-                <div class="invalid-feedback">
-                    Please choose a username.
+            <div>
+                <div style="opacity: 1; transform: none;">
+                    <h1 class="md:text-5xl text-2xl font-inter font-bold text-center  pt-2">FAQ</h1>
+                    <p class="md:text-lg text-center  p-4 pb-8">Have a question? We'll answer them right here!</p>
                 </div>
             </div>
-            <div class="mb-3 foorm">
-                <label for="name" class="form-label">Admin No:</label>
-                <input type="name" class="form-control purple" id="name" placeholder="Name" required>
-                <div class="invalid-feedback">
-                    Admin No:
+        </div>
+
+        <div class="collapseList">
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample0" aria-expanded="false" aria-controls="collapseExample0">
+                    How can I refund my merch?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample0">
+                <div class="card card-body" id="faq-card">
+                    Please contact our instagram handle @sp.gryphons for further assistance. Thanks for supporting us!
                 </div>
             </div>
-            <div class="mb-3 foorm">
-                <label for="Email" class="form-label">Email address</label>
-                <input type="email" class="form-control purple" id="Email" aria-describedby="emailHelp"
-                    placeholder="name@example.com" required>
-                <div id="emailHelp" class="form-text">Your Email is safe in our hands</div>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                    Is Gryphons a CCA?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample1">
+                <div class="card card-body" id="faq-card">
+                    Gryphons is not an official CCA of Singapore Polytechnic (SP). We are, however, a Student Interest
+                    Group
+                    (SIG) officially recognised by SP School of Computing (SoC).
+                </div>
             </div>
-            <div class="foorm">
-                <select class="form-select purple" aria-label="Default select example" required>
-                    <option selected>Your Gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
-                    <option value="3">Rather Not Say</option>
-                </select>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    Is Gryphons open to all students of SP?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample2">
+                <div class="card card-body" id="faq-card">
+                    Sorry! Unfortunately, our club is only open to students of SoC. However, we welcome all students
+                    from SP
+                    to attend our events and even those outside of SP to participate in our CTFs!
+                </div>
             </div>
-            <div class="foorm">
-                <label for="Range" class="form-label">How would you rate our website on a scale of 1 to 5?</label>
-                <input type="range" class="form-range" min="0" max="5" id="Range" required>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    How do I join Gryphons?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample3">
+                <div class="card card-body" id="faq-card">
+                    We recruit new members around the start of every new academic year. If you're a student of SoC, you
+                    might receive a mass email about our recruitment in your school inbox! </div>
             </div>
-            <div class="foorm">
-                <h5>Would you check out next year's Gryphons merch drop?
-                </h5>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                    Am I eligible to join Gryphons?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample4">
+                <div class="card card-body" id="faq-card">
+                    To join Gryphons, you must be a Year 1 or Year 2 student of SoC. If you wish to become an EXCO of
+                    Gryphons, however, you must be a Diploma in Cybersecurity and Digital Forensics (DCDF) student.
+                </div>
             </div>
-            <div class="form-check foorm">
-                <input class="form-check-input purple" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Yes
-                </label>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                    What is the recruitment process like for Gryphons?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample5">
+                <div class="card card-body" id="faq-card">
+                    A form will be available for you to indicate your interest. After which, you'll be invited for an
+                    interview where we'll get to know you better! There will also be a mini-CTF for all students of SoC
+                    hosted around the same time where we will be looking out for potential candidates! </div>
             </div>
-            <div class="form-check foorm">
-                <input class="form-check-input purple" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required>
-                <label class="form-check-label" for="flexRadioDefault1">
-                    No
-                </label>
-            </div class="foorm">
-            <h5>How did you come to know about our merch sales?</h5>
-            <div class="form-check foorm">
-                <input class="form-check-input purple" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Friends
-                </label>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                    Do I need any prior knowledge to join Gryphons?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample6">
+                <div class="card card-body" id="faq-card">
+                    Having prior cybersecurity experiences or knowledge isn't our make-or-break criteria in deciding
+                    whether
+                    you can join us. We are looking for students with a growth mindset, a burning passion for
+                    cybersecurity
+                    and the open-mindedness to learn new things. You should also be willing to commit your time and
+                    effort
+                    to the club. </div>
             </div>
-            <div class="form-check foorm">
-                <input class="form-check-input purple" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Social Media
-                </label>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                    Where can I keep a look out for Gryphons' events?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample7">
+                <div class="card card-body" id="faq-card">
+                    Follow us on social media to stay updated on our events! Give us a follow on Instagram
+                    (@sp.gryphons)
+                    and join our Discord server! </div>
             </div>
-            <div class="form-check foorm">
-                <input class="form-check-input purple" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    School
-                </label>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample8">
+                    Do Gryphons have a CTF team?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample8">
+                <div class="card card-body" id="faq-card">
+                    Nope! We are not an official competitive CTF team. Instead, we are kept updated on any major CTFs
+                    and
+                    other cybersecurity events happening and we encourage our members to participate in them. Our main
+                    emphasis of the club is to organise events for SoC students to learn more about cybersecurity.
+                </div>
             </div>
-            <div class="form-check foorm">
-                <input class="form-check-input purple" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Others
-                </label>
+
+            <br>
+
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample9">
+                    Do Gryphons host regular sessions for their members?
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample9">
+                <div class="card card-body">
+                    Nope! We are an event-based club. That means our members are activated only when there's an event
+                    and
+                    are required to help out. </div>
             </div>
-            <div class="mb-3 foorm">
-                <label for="Textarea" class="form-label">Any Other Feedback(Optional)</label>
-                <textarea class="form-control purple" id="Textarea" rows="5" placeholder="How can we improve?"></textarea>
-            </div>
-            <button type="submit" class="btn glow-on-hover" id="submit">Submit</button>
-        </form>
+
+            <br>
+
+        </div>
+
     </main>
+
     <div class="flex justify-center items-center " id="footer">
         <footer class="flex text-white justify-between">
             <div class="grid md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-5 justify-between" id="footer-text"><span
@@ -187,6 +291,7 @@
             </div>
         </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
