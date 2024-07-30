@@ -1,7 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-body {
-   font-family: 'Fredoka One', cursive;
-} */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../Font/BlenderPro-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 #logoImage {
     width: auto;
     height: 1.9rem;
@@ -11,8 +15,8 @@ main {
     min-height: calc(100vh - 44px - 44px);
 }
 
+
 body {
-    font-family: sans-serif;
     background-image: url("../Images/Cyberpunk-BG.jpg");
     /* Image Ref: https://images2.alphacoders.com/105/1054348.jpg*/
     background-attachment: fixed;
@@ -22,19 +26,21 @@ body {
     padding: 0;
     /* backdrop-filter: blur(1.5px); */
     overflow-x: hidden;
-    backdrop-filter: blur(3.5px);
+    backdrop-filter: blur(5px);
+    font-family: 'CustomFont', sans-serif;
 }
 
 .navbar .nav-link,
 .navbar .navbar-brand {
     color: white;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* Make the navbar translucent */
 nav.navbar#navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .navbar-nav .nav-link.custom-other-link {
     position: relative;
     overflow: hidden;
@@ -72,7 +78,7 @@ nav.navbar#navbar {
 
 #Product1 .ecwid-SingleProduct-picture,
 #Product2 .ecwid-SingleProduct-picture,
-#Product3 .ecwid-SingleProduct-picture{
+#Product3 .ecwid-SingleProduct-picture {
     background-size: contain;
     /* Adjust image size */
     border-radius: 0.5rem;
@@ -117,9 +123,23 @@ div.Merch {
     flex-direction: column;
 }
 
+.carText {
+    color: black;
+}
+
 .row-eq-height {
     display: flex;
     flex-wrap: wrap;
+}
+
+.rounded-carousel {
+    border-radius: 15px;
+    /* Adjust the value as needed */
+}
+
+button.carbutton span {
+    background-color: black;
+    color: black;
 }
 
 .row-eq-height>[class*='col-'] {
@@ -160,11 +180,11 @@ html#ecwid_html body#ecwid_body .ecsp.ecsp-SingleProduct-v2 div[customprop='qty'
     margin-top: 8rem;
 }
 
-html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2.ecsp-SingleProduct-v2-bordered.loaded.Merch{
-    background-color: #53258251;
+html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2.ecsp-SingleProduct-v2-bordered.loaded.Merch {
+    background-color: #54258264;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 
+    box-shadow:
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 4px 6px rgba(0, 0, 0, 0.12),
         0 5px 15px rgba(0, 0, 0, 0.24);
@@ -172,37 +192,109 @@ html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2.ecsp-SinglePro
 
 
 
-html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2.ecsp-SingleProduct-v2-bordered.loaded.Merch:hover{
+html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2.ecsp-SingleProduct-v2-bordered.loaded.Merch:hover {
     transform: translateY(-10px);
-    box-shadow: 
+    box-shadow:
         0 8px 12px rgba(0, 0, 0, 0.12),
         0 20px 40px rgba(0, 0, 0, 0.24),
         0 30px 80px rgba(0, 0, 0, 0.36),
-        0 0 6px rgba(170, 17, 212, 0.6),  /* Purple glow */
-        0 0 40px rgba(170, 17, 212, 0.5),  /* Purple glow */
-        0 0 50px rgba(170, 17, 212, 0.4);  /* Purple glow */
+        0 0 6px rgba(170, 17, 212, 0.6),
+        /* Purple glow */
+        0 0 40px rgba(170, 17, 212, 0.5),
+        /* Purple glow */
+        0 0 50px rgba(170, 17, 212, 0.4);
+    /* Purple glow */
 }
 
-html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2 .ecsp-title{
+html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2 .ecsp-title {
+    font-weight: 600;
+    font-size: 2rem;
     color: #edeaea;
 }
 
-html#ecwid_html body#ecwid_body.store label.ecwid-fieldLabel{
+html#ecwid_html body#ecwid_body.store label.ecwid-fieldLabel {
     color: #edeaea;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
-html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2{
-color: #edeaea;
-}
-
-
-html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2 .ecwid-SingleProduct-vat{
+html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2 {
     color: #edeaea;
+    font-weight: 600;
+    font-size: 2rem;
 }
 
-body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2.ecsp-SingleProduct-v2-centered.loaded{
-margin-left: 1rem;
-margin-right: 1rem;
+div.carousel-indicators button.carbuttonb {
+    background-color: black;
+    color: black;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 15px #ff00ff,
+      0 0 20px #ff00ff,
+      0 0 25px #ff00ff,
+      0 0 30px #ff00ff,
+      0 0 35px #00ffff,
+      0 0 40px #00ffff,
+      0 0 45px #00ffff,
+      0 0 50px #00ffff,
+      0 0 55px #00ffff,
+      0 0 60px #00ffff,
+      0 0 65px #8a2be2,
+      0 0 70px #8a2be2;
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neonGlow {
+    from {
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 15px #ff00ff,
+        0 0 20px #ff00ff,
+        0 0 25px #ff00ff,
+        0 0 30px #ff00ff,
+        0 0 35px #00ffff,
+        0 0 40px #00ffff,
+        0 0 45px #00ffff,
+        0 0 50px #00ffff,
+        0 0 55px #00ffff,
+        0 0 60px #00ffff,
+        0 0 65px #8a2be2,
+        0 0 70px #8a2be2;
+    }
+    to {
+      text-shadow:
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 50px #ff00ff,
+        0 0 60px #ff00ff,
+        0 0 70px #00ffff,
+        0 0 80px #00ffff,
+        0 0 90px #00ffff,
+        0 0 100px #00ffff,
+        0 0 110px #00ffff,
+        0 0 120px #00ffff,
+        0 0 130px #8a2be2,
+        0 0 140px #8a2be2;
+    }
+  }
+html#ecwid_html body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2 .ecwid-SingleProduct-vat {
+    color: #edeaea;
+    font-weight: 500;
+}
+
+body#ecwid_body.store .ecsp.ecsp-SingleProduct-v2.ecsp-SingleProduct-v2-centered.loaded {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 
@@ -216,12 +308,12 @@ form#myform {
     margin: auto;
 }
 
-#emailHelp{
+#emailHelp {
     color: #edeaea;
 }
 
-.purple{
-    background-color:#e6d5f794 ;
+.purple {
+    background-color: #e6d5f794;
 }
 
 
@@ -236,9 +328,10 @@ div.mb-3.foorm {
     margin: 5%;
 }
 
-#submit{
+#submit {
     background-color: rgb(239, 132, 239);
 }
+
 .glow-on-hover {
     width: 6rem;
     height: 3rem;
@@ -255,7 +348,7 @@ div.mb-3.foorm {
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
     top: -2px;
-    left:-2px;
+    left: -2px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
@@ -288,9 +381,17 @@ div.mb-3.foorm {
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 
@@ -313,7 +414,7 @@ div.mb-3.foorm {
     text-align: left;
     background: rgb(51, 51, 154);
     padding: 1vw;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 2.5vh;
 
 }
@@ -323,7 +424,7 @@ div.mb-3.foorm {
 }
 
 footer {
-    background-color: rgba(107, 10, 186, 0.523);
+    background-color: rgba(107, 10, 186, 0.642);
     padding: 2vh;
 }
 
@@ -336,14 +437,17 @@ footer #button1 {
     margin-left: 20vw;
 }
 
-.foot{
-    transition: transform 0.3s ease; /* Smooth transition for the transform */
+.foot {
+    transition: transform 0.3s ease;
+    /* Smooth transition for the transform */
 }
 
-.foot:hover{
-    transform: scale(1.1); /* Increase the size by 10% */
+.foot:hover {
+    transform: scale(1.1);
+    /* Increase the size by 10% */
 }
 
-html#ecwid_html body#ecwid_body.store .ecsp, html#ecwid_html body#ecwid_body.store .ecwid{
+html#ecwid_html body#ecwid_body.store .ecsp,
+html#ecwid_html body#ecwid_body.store .ecwid {
     color: black;
 }
